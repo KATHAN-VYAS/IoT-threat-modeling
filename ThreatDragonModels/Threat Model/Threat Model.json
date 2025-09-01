@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "8075df4a-0a4e-429b-a91d-a47bea0d5607",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "ESP32 controller\n",
@@ -135,13 +135,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -168,6 +161,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -251,7 +245,6 @@
               ]
             },
             "id": "6940fb1e-291e-4ca4-8e40-ea599fbb03d4",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "ESP flash",
@@ -289,6 +282,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -372,7 +366,6 @@
               ]
             },
             "id": "6fc687e4-4d1c-48fc-a4b6-729ced8ec64d",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "User/ Admins\n",
@@ -406,6 +399,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -489,7 +483,6 @@
               ]
             },
             "id": "aa78c078-92c6-4f60-b662-3ac2723b6b36",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "email server",
@@ -513,7 +506,7 @@
             },
             "attrs": {
               "text": {
-                "text": "DHT11"
+                "text": "sensor1(DHT11)"
               },
               "body": {
                 "stroke": "#333333",
@@ -523,6 +516,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -606,10 +600,9 @@
               ]
             },
             "id": "acd947c0-7a4d-418a-8b94-715e73d96f28",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
-              "name": "DHT11",
+              "name": "sensor1(DHT11)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -630,7 +623,7 @@
             },
             "attrs": {
               "text": {
-                "text": "LDR"
+                "text": "sensor2(LDR)"
               },
               "body": {
                 "stroke": "#333333",
@@ -640,6 +633,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -723,10 +717,9 @@
               ]
             },
             "id": "2e7edf17-a0de-42ff-a49b-1cde68c16909",
-            "zIndex": 6,
             "data": {
               "type": "tm.Actor",
-              "name": "LDR",
+              "name": "sensor2(LDR)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -747,7 +740,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Soil moisture"
+                "text": "sensor3(Soil moisture)"
               },
               "body": {
                 "stroke": "#333333",
@@ -757,6 +750,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -840,10 +834,9 @@
               ]
             },
             "id": "fab98234-ec8e-480a-a429-be4302ee808a",
-            "zIndex": 7,
             "data": {
               "type": "tm.Actor",
-              "name": "Soil moisture",
+              "name": "sensor3(Soil moisture)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -1052,6 +1045,14 @@
             },
             "vertices": [
               {
+                "x": 600,
+                "y": 170
+              },
+              {
+                "x": 650,
+                "y": 200
+              },
+              {
                 "x": 670,
                 "y": 220
               }
@@ -1213,6 +1214,10 @@
             },
             "vertices": [
               {
+                "x": 820,
+                "y": 230
+              },
+              {
                 "x": 880,
                 "y": 240
               }
@@ -1239,6 +1244,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1322,7 +1328,6 @@
               ]
             },
             "id": "1d43633f-e143-4e80-9f42-88d643549033",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Cloud",
